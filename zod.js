@@ -14,4 +14,7 @@ module.exports = {
       files: '*.ts',
     },
   ],
+  rules: {
+    'zod/require-strict': 'off',
+  },
 };
