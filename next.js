@@ -8,14 +8,4 @@ module.exports = {
     ecmaVersion: 2022,
   },
   extends: ['next'],
-  overrides: [
-    {
-      extends: ['canonical/react', 'canonical/typescript'],
-      files: '*.tsx',
-    },
-    {
-      extends: ['canonical/react'],
-      files: '*.jsx',
-    },
-  ],
 };
