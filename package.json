@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-custom",
+  "name": "@vchikalkin/eslint-config-awesome",
   "version": "1.0.0",
   "license": "MIT",
   "main": "index.js",
@@ -19,11 +19,13 @@
     "access": "public"
   },
   "description": "Custom ESLint config for Next.js apps",
-  "repository": "https://github.com/vchikalkin/eslint-config-custom",
+  "repository": "https://github.com/vchikalkin/eslint-config-awesome",
   "author": "vchikalkin",
   "keywords": [
     "eslint",
     "config",
-    "nextjs"
+    "nextjs",
+    "turbo",
+    "prettier"
   ]
 }
