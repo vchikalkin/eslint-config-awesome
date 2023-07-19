@@ -7,6 +7,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2022,
   },
+  parser: '@typescript-eslint/parser',
   overrides: [
     {
       files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],

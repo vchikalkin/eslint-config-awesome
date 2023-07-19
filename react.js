@@ -7,6 +7,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2022,
   },
+  parser: '@typescript-eslint/parser',
   overrides: [
     {
       extends: ['canonical/react', 'canonical/typescript'],

@@ -4,9 +4,6 @@ module.exports = {
     es2022: true,
     node: true,
   },
-  parserOptions: {
-    ecmaVersion: 2022,
-  },
   overrides: [
 
     {
