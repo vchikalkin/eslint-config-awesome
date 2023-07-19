@@ -14,7 +14,6 @@ module.exports = {
     'eslint:recommended',
     'next',
     'prettier',
-    'turbo',
   ],
   overrides: [
     {

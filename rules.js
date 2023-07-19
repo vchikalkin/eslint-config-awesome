@@ -137,8 +137,5 @@ module.exports = {
 
     // Zod
     'zod/require-strict': 'off',
-
-    // Turbo
-    'turbo/no-undeclared-env-vars': 'warn',
   },
 };
