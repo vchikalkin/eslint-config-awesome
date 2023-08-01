@@ -1,6 +1,4 @@
-const { defineConfig } = require('eslint-define-config');
-
-module.exports = defineConfig({
+module.exports = {
   env: {
     browser: true,
     es2022: true,
@@ -26,4 +24,4 @@ module.exports = defineConfig({
     },
   ],
   plugins: ['sonarjs', '@typescript-eslint', 'prettier'],
-});
+};
