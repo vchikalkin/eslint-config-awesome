@@ -1,34 +1,34 @@
 {
   "name": "@vchikalkin/eslint-config-awesome",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "license": "MIT",
   "main": "index.js",
   "devDependencies": {
-    "@typescript-eslint/parser": "^5.60.0",
-    "eslint-config-canonical": "^41.1.3",
-    "eslint-config-next": "^13.4.7",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-canonical": "^4.4.4",
-    "eslint-plugin-prettier": "^4.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint": "^8.46.0",
+    "eslint-config-canonical": "^41.1.7",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-define-config": "^1.22.0",
+    "eslint-plugin-canonical": "^4.9.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-sonarjs": "^0.19.0",
-    "eslint-plugin-testing-library": "^5.11.0"
-  },
-  "peerDependencies": {
-    "eslint": "^8.43.0"
+    "typescript": "^5.1.6"
   },
   "publishConfig": {
     "access": "public"
   },
-  "description": "Custom ESLint config for Next.js apps",
+  "description": "Custom ESLint config for Next.js/React/Typescript/Javascript apps",
   "repository": "https://github.com/vchikalkin/eslint-config-awesome",
   "author": "vchikalkin",
   "keywords": [
     "config",
     "eslint",
-    "json",
-    "nextjs",
-    "prettier",
     "react",
+    "nextjs",
+    "typescript",
+    "javascript",
+    "prettier",
+    "json",
     "zod"
   ]
 }
