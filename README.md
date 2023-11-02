@@ -12,39 +12,30 @@
 yarn add -D eslint @vchikalkin/eslint-config-awesome
 ```
 
-### ⚙️ Config `.eslintrc`
+### ⚙️ Config `.eslintrc.js`
 
 For Next.js
 
-```json
-{
-  "extends": [
-    "@vchikalkin/eslint-config-awesome/next-typescript/config",
-    "@vchikalkin/eslint-config-awesome/next-typescript/rules"
-  ]
-}
+```js
+const { createConfig } = require('@vchikalkin/eslint-config-awesome');
+
+module.exports = createConfig('next-typescript'); // or module.exports = createConfig('next');
 ```
 
 For React
 
-```json
-{
-  "extends": [
-    "@vchikalkin/eslint-config-awesome/react-typescript/config",
-    "@vchikalkin/eslint-config-awesome/react-typescript/rules"
-  ]
-}
+```js
+const { createConfig } = require('@vchikalkin/eslint-config-awesome');
+
+module.exports = createConfig('react-typescript'); // or module.exports = createConfig('react');
 ```
 
 For TypeScript
 
-```json
-{
-  "extends": [
-    "@vchikalkin/eslint-config-awesome/typescript/config",
-    "@vchikalkin/eslint-config-awesome/typescript/rules"
-  ]
-}
+```js
+const { createConfig } = require('@vchikalkin/eslint-config-awesome');
+
+module.exports = createConfig('typescript');
 ```
 
 ### ➕ Add script for package.json

@@ -1,11 +1,12 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
+  globals: {
+    JSX: true,
+  },
   env: {
     browser: true,
     es2022: true,
     node: true,
-  },
-  parserOptions: {
-    ecmaVersion: 'latest',
   },
   parser: '@typescript-eslint/parser',
   extends: ['canonical', 'plugin:sonarjs/recommended', 'prettier'],

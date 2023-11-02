@@ -1,11 +1,13 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
+  globals: {
+    React: true,
+    JSX: true,
+  },
   env: {
     browser: true,
     es2022: true,
     node: true,
-  },
-  parserOptions: {
-    ecmaVersion: 'latest',
   },
   parser: '@typescript-eslint/parser',
   extends: [
