@@ -1,6 +1,6 @@
 {
   "name": "@vchikalkin/eslint-config-awesome",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
@@ -12,7 +12,6 @@
     "eslint-plugin-sonarjs": "^0.22.0"
   },
   "devDependencies": {
-    "eslint": "^8.52.0",
     "typescript": "^5.2.2"
   },
   "publishConfig": {
@@ -31,5 +30,9 @@
     "prettier",
     "json",
     "zod"
-  ]
+  ],
+  "peerDependencies": {
+    "@babel/eslint-plugin": "^7.22.10",
+    "eslint": "^8.52.0"
+  }
 }
