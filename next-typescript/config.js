@@ -40,7 +40,6 @@ module.exports = {
   ],
   plugins: [
     'sonarjs',
-    '@typescript-eslint',
     'prettier',
     // 'testing-library',
   ],

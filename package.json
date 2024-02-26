@@ -1,10 +1,10 @@
 {
   "name": "@vchikalkin/eslint-config-awesome",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
-    "@typescript-eslint/parser": "^6.9.1",
+    "@typescript-eslint/parser": "^6.19.0",
     "eslint-config-canonical": "^42.3.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-canonical": "^4.15.1",

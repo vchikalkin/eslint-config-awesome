@@ -24,5 +24,5 @@ module.exports = {
       files: '*.jsx',
     },
   ],
-  plugins: ['sonarjs', '@typescript-eslint', 'prettier'],
+  plugins: ['sonarjs', 'prettier'],
 };

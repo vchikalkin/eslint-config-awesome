@@ -13,5 +13,5 @@ module.exports = {
       files: '*.ts',
     },
   ],
-  plugins: ['sonarjs', '@typescript-eslint', 'prettier'],
+  plugins: ['sonarjs', 'prettier'],
 };
