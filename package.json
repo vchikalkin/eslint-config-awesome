@@ -1,6 +1,6 @@
 {
   "name": "@vchikalkin/eslint-config-awesome",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
@@ -34,6 +34,8 @@
     "zod"
   ],
   "peerDependencies": {
+    "@eslint/compat": "^1.2.3",
+    "@eslint/eslintrc": "^3.2.0",
     "@next/eslint-plugin-next": "^15.0.3"
   }
 }
