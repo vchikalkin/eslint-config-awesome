@@ -1,3 +1,3 @@
-const createConfig = require('./utils/create-config');
+const reactTypescript = require('./configs/react-typescript');
 
-module.exports = { createConfig };
+module.exports = { 'react-typescript': reactTypescript };

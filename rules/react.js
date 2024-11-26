@@ -1,7 +1,7 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
+  name: 'React rules override',
   rules: {
-    'react/prop-types': 'off',
-    'react/jsx-sort-props': 'off',
     'react/function-component-definition': [
       'error',
       {

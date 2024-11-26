@@ -1,41 +1,48 @@
-# @vchikalkin/eslint-config-awesome
+# @vchikalkin/eslint-config-awesome 🎉
 
 - 🛠️ Most rules autofixable
-- 🎯 Designed to work with TypeScript, Nextjs, React projects
+- 🎯 Designed to work with TypeScript, NextJS, React projects
 - 🏆 Powered by [Canonical](https://github.com/gajus/eslint-config-canonical), [SonarJS](https://github.com/SonarSource/eslint-plugin-sonarjs)
+- ⚙️ Using ESLint **Flat** config
+
+## Requirements
+
+- [ESLint 9](https://github.com/eslint/eslint)
+- [TypeScript 5](https://www.typescriptlang.org/)
 
 ## 🚀 Usage
 
 ### 📥 Install
 
 ```bash
-yarn add -D eslint @vchikalkin/eslint-config-awesome
+pnpm add -D eslint typescript @vchikalkin/eslint-config-awesome
 ```
 
-### ⚙️ Config `.eslintrc.js`
+### ⚙️ Config `eslint.config.js`
 
-For Next.js
+Common usage:
 
 ```js
-const { createConfig } = require('@vchikalkin/eslint-config-awesome');
+const config = require('@vchikalkin/eslint-config-awesome');
 
-module.exports = createConfig('next-typescript'); // or module.exports = createConfig('next');
+module.exports = config['react-typescript'];
 ```
 
-For React
+Extend config:
 
 ```js
-const { createConfig } = require('@vchikalkin/eslint-config-awesome');
+const config = require('@vchikalkin/eslint-config-awesome');
 
-module.exports = createConfig('react-typescript'); // or module.exports = createConfig('react');
-```
-
-For TypeScript
-
-```js
-const { createConfig } = require('@vchikalkin/eslint-config-awesome');
-
-module.exports = createConfig('typescript');
+module.exports = [
+  ...config['react-typescript'],
+  {
+    rules: {
+      'rule-name': 'off',
+    },
+    ignores: ['node_modules'],
+  },
+  //...other configs
+];
 ```
 
 ### ➕ Add script for package.json
@@ -57,13 +64,14 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
 
 ```json
 {
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.removeUnusedImports": "explicit"
+  },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.fixAll.eslint": true,
-    "source.removeUnusedImports": true
-  },
+  "eslint.lintTask.enable": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -71,7 +79,6 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
     "typescript",
     "typescriptreact",
     "yaml"
-  ],
-  "eslint.lintTask.enable": true
+  ]
 }
 ```
