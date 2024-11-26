@@ -1,10 +1,9 @@
 {
   "name": "@vchikalkin/eslint-config-awesome",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
-    "@typescript-eslint/parser": "^8.16.0",
     "eslint-config-canonical": "^44.3.31",
     "eslint-plugin-sonarjs": "^2.0.4"
   },
