@@ -1,6 +1,6 @@
 {
   "name": "@vchikalkin/eslint-config-awesome",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
@@ -14,7 +14,6 @@
     "@next/eslint-plugin-next": "^15.0.3",
     "eslint": "^9.15.0",
     "eslint-config-next": "^15.0.3",
-    "next": "^15.0.3",
     "typescript": "^5"
   },
   "publishConfig": {
