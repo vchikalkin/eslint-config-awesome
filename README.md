@@ -71,7 +71,6 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
     "source.fixAll.eslint": "explicit",
     "source.removeUnusedImports": "explicit"
   },
-  "editor.formatOnSave": true,
   "eslint.lintTask.enable": true,
   "eslint.validate": [
     "javascript",
@@ -84,7 +83,9 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
 }
 ```
 
-Recomended **.prettierrc**:
+### ⚙️ Config `.prettierrc`:
+
+Prettier is not needed, **ESLint Config Awesome🎉** includes **eslint-plugin-prettier** with that config:
 
 ```json
 {
@@ -94,7 +95,7 @@ Recomended **.prettierrc**:
   "endOfLine": "auto",
   "insertPragma": false,
   "jsxSingleQuote": false,
-  "printWidth": 100,
+  "printWidth": 80,
   "proseWrap": "preserve",
   "quoteProps": "as-needed",
   "requirePragma": false,
