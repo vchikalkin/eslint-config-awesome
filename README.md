@@ -69,7 +69,6 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
     "source.fixAll.eslint": "explicit",
     "source.removeUnusedImports": "explicit"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "eslint.lintTask.enable": true,
   "eslint.validate": [
@@ -80,5 +79,27 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
     "typescriptreact",
     "yaml"
   ]
+}
+```
+
+Recomended **.prettierrc**:
+
+```json
+{
+  "arrowParens": "always",
+  "bracketSameLine": false,
+  "bracketSpacing": true,
+  "endOfLine": "auto",
+  "insertPragma": false,
+  "jsxSingleQuote": false,
+  "printWidth": 100,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "useTabs": false
 }
 ```
