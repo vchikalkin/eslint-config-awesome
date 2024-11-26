@@ -1,12 +1,7 @@
-/* eslint-disable no-undef */
-/* eslint-disable import/no-extraneous-dependencies */
-const { fixupConfigRules } = require('@eslint/compat');
-const { FlatCompat } = require('@eslint/eslintrc');
 const auto = require('eslint-config-canonical/configurations/auto');
 const sonarjs = require('eslint-plugin-sonarjs');
 const rules = require('../rules');
-
-const flatCompat = new FlatCompat();
+const pluginNext = require('@next/eslint-plugin-next');
 
 /** @type {import('eslint').Linter.Config} */
 module.exports = [
@@ -19,7 +14,15 @@ module.exports = [
       react: require('eslint-plugin-react'),
     },
   },
-  ...fixupConfigRules(flatCompat.extends('plugin:@next/next/core-web-vitals')),
+  {
+    plugins: {
+      '@next/next': pluginNext,
+    },
+    rules: {
+      ...pluginNext.configs.recommended.rules,
+      ...pluginNext.configs['core-web-vitals'].rules,
+    },
+  },
   rules.common,
   rules.react,
   rules.sonar,
