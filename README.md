@@ -25,6 +25,7 @@ Common usage:
 ```js
 const config = require('@vchikalkin/eslint-config-awesome');
 
+/** @type {import("eslint").Linter.Config} */
 module.exports = config['react-typescript'];
 ```
 
@@ -33,6 +34,7 @@ Extend config:
 ```js
 const config = require('@vchikalkin/eslint-config-awesome');
 
+/** @type {import("eslint").Linter.Config} */
 module.exports = [
   ...config['react-typescript'],
   {
