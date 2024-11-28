@@ -1,6 +1,6 @@
 {
   "name": "@vchikalkin/eslint-config-awesome",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
