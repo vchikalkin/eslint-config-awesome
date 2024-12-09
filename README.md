@@ -95,7 +95,7 @@ Prettier is not needed, **ESLint Config Awesome🎉** includes **eslint-plugin-p
   "endOfLine": "auto",
   "insertPragma": false,
   "jsxSingleQuote": false,
-  "printWidth": 80,
+  "printWidth": 100,
   "proseWrap": "preserve",
   "quoteProps": "as-needed",
   "requirePragma": false,

@@ -1,15 +1,16 @@
 {
   "name": "@vchikalkin/eslint-config-awesome",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
-    "eslint-config-canonical": "^44.3.31",
-    "eslint-plugin-sonarjs": "^2.0.4"
+    "eslint-config-canonical": "^44.3.33",
+    "eslint-plugin-sonarjs": "^3.0.1"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^15.0.3",
+    "@next/eslint-plugin-next": "^15.0.4",
     "eslint": "^9.15.0",
+    "eslint-plugin-canonical": "^5.0.0",
     "typescript": "^5"
   },
   "publishConfig": {
@@ -30,6 +31,8 @@
     "zod"
   ],
   "peerDependencies": {
-    "@next/eslint-plugin-next": "^15.0.3"
-  }
+    "@next/eslint-plugin-next": "^15.0.3",
+    "eslint-plugin-canonical": "^5.0.0"
+  },
+  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387"
 }

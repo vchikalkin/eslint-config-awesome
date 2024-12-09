@@ -26,6 +26,7 @@ module.exports = [
   rules.common,
   rules.react,
   rules.sonar,
+  rules.next,
   {
     ignores: [
       '**/node_modules',

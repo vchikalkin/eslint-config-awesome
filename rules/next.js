@@ -1,7 +1,7 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  name: 'Sonar rules override',
+  name: 'Next rules override',
   rules: {
-    'sonarjs/no-duplicate-string': 'warn',
+    '@next/next/no-duplicate-head': 'off',
   },
 };

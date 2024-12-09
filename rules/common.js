@@ -7,7 +7,7 @@ module.exports = {
       1,
       {
         ignoreExporting: false,
-        regex: '^[A-Za-z]+(?:[A-Za-z0-9-]*\\.[A-Za-z0-9-]+)*\\d*$',
+        regex: '^[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\d*$',
       },
     ],
     'func-style': [
@@ -22,6 +22,35 @@ module.exports = {
       {
         allow: ['**/*.css'],
       },
+    ],
+    'import/extensions': [
+      'error',
+      'never',
+      {
+        css: 'always',
+        json: 'always',
+      },
+    ],
+    'prettier/prettier': [
+      'error',
+      {
+        arrowParens: 'always',
+        bracketSameLine: false,
+        bracketSpacing: true,
+        endOfLine: 'auto',
+        insertPragma: false,
+        jsxSingleQuote: false,
+        printWidth: 100,
+        proseWrap: 'preserve',
+        quoteProps: 'as-needed',
+        requirePragma: false,
+        semi: true,
+        singleQuote: true,
+        tabWidth: 2,
+        trailingComma: 'all',
+        useTabs: false,
+      },
+      { usePrettierrc: false },
     ],
   },
 };
